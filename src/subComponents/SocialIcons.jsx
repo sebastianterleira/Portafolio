@@ -34,17 +34,17 @@ function SocialIcons() {
         </NavLink>
       </div>
       <div>
-        <NavLink style={{color:'inherit'}} target="_blank" to={"https://twitter.com/SebastianTer"}>
+        <NavLink style={{color:'inherit'}} target="_blank" to={"https://twitter.com/SebastianTerlei"}>
           <Twitter width={30} height={30} fill="currentColor" />
         </NavLink>
       </div>
       <div>
-        <NavLink style={{color:'inherit'}} target="_blank" to={"https://github.com/sebastianterleira"}>
+        <NavLink style={{color:'inherit'}} target="_blank" to={"https://www.linkedin.com/in/sebastian-terleira-8773a4247/"}>
           <Linkedin width={30} height={30} fill="currentColor" />
         </NavLink>
       </div>
       <div>
-        <NavLink style={{color:'inherit'}} target="_blank" to={"https://github.com/sebastianterleira"}>
+        <NavLink style={{color:'inherit'}} target="_blank" to={"https://sebastianterdev.netlify.app/"}>
           <Blog width={30} height={30} fill="currentColor" />
         </NavLink>
       </div>
