@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
+import { Twitter, Github, Blog, Linkedin } from "../components/AllSvgs";
 
 const Icons = styled.div`
 display: flex;
@@ -40,12 +40,12 @@ function SocialIcons() {
       </div>
       <div>
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://github.com/sebastianterleira"}>
-          <Facebook width={30} height={30} fill="currentColor" />
+          <Linkedin width={30} height={30} fill="currentColor" />
         </NavLink>
       </div>
       <div>
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://github.com/sebastianterleira"}>
-          <YouTube width={30} height={30} fill="currentColor" />
+          <Blog width={30} height={30} fill="currentColor" />
         </NavLink>
       </div>
 
