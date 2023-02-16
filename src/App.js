@@ -17,10 +17,10 @@ function App() {
       <ThemeProvider theme={LightTheme}>
         <Routes>
           <Route exact path={"/"} element={<Main/>}/>
-          <Route path={"AboutPage"} element={<AboutPage/>}/>
-          <Route path={"BlogPage"} element={<BlogPage/>}/>
-          <Route path={"WorkPage"} element={<WorkPage/>}/>
-          <Route path={"MySkillsPage"} element={<MySkillsPage/>}/>
+          <Route path={"about"} element={<AboutPage/>}/>
+          <Route path={"blog"} element={<BlogPage/>}/>
+          <Route path={"work"} element={<WorkPage/>}/>
+          <Route path={"skills"} element={<MySkillsPage/>}/>
         </Routes>
       </ThemeProvider>
     </>
