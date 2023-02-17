@@ -65,7 +65,7 @@ justify-content: space-evenly;
 `
 
 const ABOUT = styled(NavLink)`
-color: ${props => props.theme.text};
+color: ${props => props.click ? props.theme.body : props.theme.text};
 text-decoration: none;
 z-index: 1;
 `
@@ -151,13 +151,13 @@ function Main() {
             Blog
           </h2>
         </BLOG>
-        <WORK to={"/work"}>
+        <WORK to={"/work"} click={click}>
           <h2>
             Work
           </h2>
         </WORK>
         <BottomBar>
-        <ABOUT to={"/about"}>
+        <ABOUT to={"/about"} click={click}>
           <h2>
             About.
           </h2>
