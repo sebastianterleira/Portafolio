@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../assets/Images/profile-img.png"
+import Me from "../assets/Images/profile-img.png";
+import {motion} from "framer-motion";
 
-const Box = styled.div`
+const Box = styled(motion.div)`
 position: absolute;
 left: 50%;
 top: 50%;
@@ -25,7 +26,7 @@ background: linear-gradient(
   border-left: 2px solid ${props => props.theme.body};
   border-right: 2px solid ${props => props.theme.text};
 
-    z-index: 1; 
+    z-index: 1;
 `
 
 const SubBox = styled.div`
@@ -62,7 +63,11 @@ justify-content: space-evenly;
 
 function Intro() {
   return (
-    <Box>
+    <Box
+    initial={{height:0}}    
+    animate={{height: "60vh" }}
+    transition={{ type: "spring", duration: 2, delay: 1 }}
+    >
       <SubBox>
         <Text>
           <h1>{"{Hi}"},</h1>
