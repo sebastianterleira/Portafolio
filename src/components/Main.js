@@ -44,7 +44,7 @@ z-index: 1;
 `
 
 const WORK = styled(NavLink)`
-color: ${props => props.theme.text};
+color: ${props => props.click ? props.theme.body : props.theme.text};
 position: absolute;
 top: 50%;
 left: calc(1.147rem + 2vw);
@@ -134,8 +134,8 @@ function Main() {
       <Container>
         <PowerButton />
         <LogoComponent />
-        <SocialIcons />
-
+        <SocialIcons theme={click ? "dark" : "light"}/>
+        
         <Center click={click}>
           <YinYang onClick={() => handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill="currentColor" />
           <span>Click here</span>
