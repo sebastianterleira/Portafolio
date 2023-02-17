@@ -64,8 +64,8 @@ justify-content: space-evenly;
 function Intro() {
   return (
     <Box
-    initial={{height:0}}    
-    animate={{height: "60vh" }}
+    initial={{height: 0}}    
+    animate={{height: "65vh"}}
     transition={{ type: "spring", duration: 2, delay: 1 }}
     >
       <SubBox>
@@ -76,9 +76,13 @@ function Intro() {
         </Text>
       </SubBox>
       <SubBox>
-        <div>
+        <motion.div
+        initial={{opacity: 0}}    
+        animate={{opacity: 1 }}
+        transition={{ duration: 1, delay: 2 }}
+        >
           <img className="pic" src={Me} alt="Profile Pic" />
-        </div>
+        </motion.div>
       </SubBox>
     </Box>
   ) 
