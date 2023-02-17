@@ -5,6 +5,7 @@ import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import { YinYang } from "./AllSvgs";
+import Intro from "./Intro";
 
 const MainContainer = styled.div`
 background: ${props => props.theme.body};
@@ -170,6 +171,7 @@ function Main() {
         </BottomBar>
 
       </Container>
+      {click ? <Intro click={click}/> : null}
     </MainContainer>
   )
 }
