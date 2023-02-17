@@ -1,9 +1,11 @@
+import { DragControls } from "framer-motion"
 import React from "react"
 import styled from "styled-components"
+import { DarkTheme } from "../components/Themes"
 
 const Logo = styled.h1`
 display: inline-block;
-color: ${props => props.theme.text};
+color: ${props => props.color === "dark" ? DarkTheme.text : DarkTheme.body };
 font-family: 'Pacifico',cursive;
 
 position: fixed;
@@ -12,9 +14,9 @@ top: 2rem;
 z-index: 3;
 `
 
-function LogoComponent() {
+function LogoComponent(props) {
   return (
-    <Logo>
+    <Logo color={props.theme}>
       ST
     </Logo>
   )
