@@ -6,7 +6,7 @@ export const Blogs = [
         name:"Build Website with ReactJS, Styled-components and GSAP for Scrolling Animations",
         tags:["react","gsap","styled-components"],
         date:"13 May, 2023",
-        imgSrc:"Insertar Imagen",
+        imgSrc:"Mi Historia",
         link:"Insertar Link"
     },
     {
