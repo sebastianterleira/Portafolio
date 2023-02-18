@@ -7,7 +7,7 @@ export const Blogs = [
         tags:["Blog", "History", "Article"],
         date:"25 Dec, 2022",
         imgSrc:"Mi Historia",
-        link:"Insertar Link"
+        link:"https://sebastianterdev.netlify.app/articles/mi-historia-mis-aprendizajes/"
     },
     {
         id:2,
