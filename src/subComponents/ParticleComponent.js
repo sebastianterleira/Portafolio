@@ -5,6 +5,7 @@ import Particles from 'react-tsparticles';
 // particle config files
 import configLight from "../config/particlesjs-config-light.json";
 import configDark from "../config/particlesjs-config.json";
+import AmongUS from "../config/particles.json";
 import { loadFull } from "tsparticles";
 
 const Box = styled.div`
