@@ -7,6 +7,7 @@ import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import ParticleComponent from "../subComponents/ParticleComponent";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -75,7 +76,7 @@ function AboutPage() {
         <br/><br/>
         Creo que todo es un Arte cuando pones tu conciencia en ello. Puedes conectarte conmigo a través de enlaces sociales.
         </Main>
-
+        <BigTitle text="ABOUT" top="10%" left="5%"/>
       </Box>   
     </ThemeProvider>
   )
