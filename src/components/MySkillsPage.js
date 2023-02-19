@@ -109,7 +109,7 @@ function MySkillsPage() {
             <Design width={40} height={40} fill="currentColor"/> Frontend Developer
           </Title>
           <Description>
-            Mi mayor fuerte quizas sea el Frontend, pero tambien disfruto bastante de trabajar con Backend.
+          Me encanta crear aplicaciones con diseños espectaculares y alucinantes, mejorando siempre.
           </Description>
           <Description>
           <strong>SKILLS</strong>
