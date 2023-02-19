@@ -7,6 +7,7 @@ import SocialIcons from "../subComponents/SocialIcons";
 import {Blogs} from "../data/BlogData"
 import BlogComponent from "./BlogComponent";
 import AnchorComponent from "../subComponents/Anchor";
+import BigTitle from "../subComponents/BigTitle";
 
 const MainCointer = styled.div`
 background-image: url(${img});
@@ -61,6 +62,7 @@ function BlogPage() {
             })}
           </Grid>
         </Center>
+        <BigTitle text="BLOG" top="5rem" left="5rem"/>
       </Container>
     </MainCointer>   
   )
