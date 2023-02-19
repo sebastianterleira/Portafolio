@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components" 
 import { DarkTheme } from "./Themes"
 
@@ -10,10 +10,10 @@ import Card from "../subComponents/Card";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
-width: 100vw;
-height: 100vh;
+height: 400vh;
 position: relative;
 overflow: hidden;
+
 `
 
 const Main = styled.ul`
@@ -27,6 +27,21 @@ color: white;
 `
 
 function WorkPage() {
+
+  const ref = useRef(null)
+
+  useEffect(() => {
+    let element = ref.current;
+
+    const rotate = () => {
+      element.style.transform = `translateX(${-window.scrollY}px)` 
+    }
+
+    window.addEventListener("scroll", rotate) 
+
+    return () => window.removeEventListener("scroll", rotate) 
+  }, [])
+
   return (
     <ThemeProvider theme={DarkTheme}>
       <Box>
@@ -34,7 +49,7 @@ function WorkPage() {
         <SocialIcons theme={"dark"}/>
         <PowerButton />
 
-      <Main>
+      <Main ref={ref}>
         {
           Work.map(d => 
           <Card key={d.id} data={d}/> 
