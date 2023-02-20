@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import MiHistoria from "../assets/Images/BlogImages/home.png"
 import NoData from "../assets/Images/BlogImages/NoData.png"
 
-const Box = styled.div`
+const Box = styled(NavLink)`
 width: calc(10rem + 15vw);
 text-decoration: none;
 height: 20rem;
@@ -64,9 +65,9 @@ padding: 0.5rem 0;
 
 function BlogComponent(props) {
   const {name, tags, date, imgSrc, link} = props.blog
-  console.log(imgSrc)
+  
   return (
-    <Box target="_blank" to={{pathname: link}}>
+    <Box to={`${link}`}>
       <Image img={imgSrc === "Insertar Imagen" ? NoData : MiHistoria}/>
       <Title>{name}</Title>
       <HashTags>

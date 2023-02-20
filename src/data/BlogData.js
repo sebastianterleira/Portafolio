@@ -3,7 +3,7 @@
 export const Blogs = [
     {
         id:1,
-        name:"Build Website with ReactJS, Styled-components and GSAP for Scrolling Animations",
+        name:"Este es mi primer post en este Blog, esta es una pequeña parte de mi historia y mis inicios en la programación.",
         tags:["Blog", "History", "Article"],
         date:"25 Dec, 2022",
         imgSrc:"Mi Historia",
@@ -15,7 +15,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link: "Insertar Link"
     },
     {
         id:3,
