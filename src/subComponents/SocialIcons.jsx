@@ -24,7 +24,7 @@ z-index: 3;
 const Line = styled(motion.span)`
 width: 2px;
 height: 6.5rem;
-background-color: ${props => props.color === "dark" ? DarkTheme.text : DarkTheme.body };
+background-color: ${props => props.color === "dark" ? DarkTheme.secondary : DarkTheme.primary };
 `
 
 function SocialIcons(props) {
@@ -36,7 +36,7 @@ function SocialIcons(props) {
       transition={{type: "spring", duratio:1, delay:1}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://github.com/sebastianterleira"}>
-          <Github width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body } />
+          <Github width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
         </NavLink>
       </motion.div>
       <motion.div
@@ -45,7 +45,7 @@ function SocialIcons(props) {
       transition={{type: "spring", duratio:1, delay:1.2}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://twitter.com/SebastianTerlei"}>
-          <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body } />
+          <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
         </NavLink>
       </motion.div>
       <motion.div
@@ -54,7 +54,7 @@ function SocialIcons(props) {
       transition={{type: "spring", duratio:1, delay:1.4}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://www.linkedin.com/in/sebastian-terleira-8773a4247/"}>
-          <Linkedin width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body } />
+          <Linkedin width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
         </NavLink>
       </motion.div>
       <motion.div
@@ -63,7 +63,7 @@ function SocialIcons(props) {
       transition={{type: "spring", duratio:1, delay:1.6}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://sebastianterdev.netlify.app/"}>
-          <Blog width={25} height={25} fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body } />
+          <Blog width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
         </NavLink>
       </motion.div>
 

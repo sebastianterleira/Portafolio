@@ -4,6 +4,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { PowerBtn } from "../components/AllSvgs";
+import { DarkTheme } from "../components/Themes";
 
 const Power = styled.button`
 position: fixed;
@@ -26,21 +27,21 @@ z-index: 3;
 cursor: pointer;
 
 &:hover{
-  background-color: rgba(0, 255, 0, 0.4);
-  box-shadow: 0 0 8px 6px rgba(0, 255, 0, 0.2);
+  background-color: ${props => props.theme === "dark" ? "rgba(21, 33, 42, 1)" : "rgba(255 ,168 ,217 ,0.4)"};
+  box-shadow: 0 0 8px 6px ${props => props.theme === "dark" ? "rgba(21, 33, 42, 1)" : "rgba(195, 59, 128, 0.2)"};
 }
-
+21 33 42 1
 &>*:first-child{
   text-decoration: none;
   color: inherit;
 }
 `
 
-function PowerButton() {
+function PowerButton(props) {
   return (
     <Power>
       <NavLink to={"/"}>
-        <PowerBtn width={30} height={30} fill="currentColor"/>
+        <PowerBtn width={30} height={30} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary}/>
       </NavLink>
     </Power>
   ) 

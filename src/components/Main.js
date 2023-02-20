@@ -116,7 +116,7 @@ transition: all 1s ease;
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
-background-color: #000; 
+background-color: #15212a; 
 bottom: 0;
 right: 50%;
 width: ${props => props.click ? "50%" : "0%"};
@@ -134,12 +134,12 @@ function Main() {
     <MainContainer>
       <DarkDiv click={click} />
       <Container>
-        <PowerButton />
+        <PowerButton theme={click ? "dark" : "light"}/>
         <LogoComponent theme={click ? "dark" : "light"}/>
         <SocialIcons theme={click ? "dark" : "light"}/>
         
         <Center click={click}>
-          <YinYang onClick={() => handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill="currentColor" />
+          <YinYang onClick={() => handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill="#15212a" />
           <span>Click here</span>
         </Center>
 
