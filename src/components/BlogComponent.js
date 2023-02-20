@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MiHistoria from "../assets/Images/BlogImages/home.png"
 import NoData from "../assets/Images/BlogImages/NoData.png"
 
-const Box = styled(NavLink)`
+const Box = styled(motion(NavLink))`
 width: calc(10rem + 15vw);
 text-decoration: none;
 height: 20rem;
@@ -63,11 +64,30 @@ const Date = styled.span`
 padding: 0.5rem 0;
 `
 
+const Container = styled(motion.div)``;
+
+// Framer-motion configuration
+
+const Item = {
+  hidden: {
+    scale: 0
+  },
+  show: {
+    scale: 1,
+    transition: {
+      type: "spring",
+      duration: 0.5
+    }
+  }
+  
+}
+
 function BlogComponent(props) {
   const {name, tags, date, imgSrc, link} = props.blog
   
   return (
-    <Box to={`${link}`}>
+    <Container variants={Item}>
+      <Box to={`${link}`}>
       <Image img={imgSrc === "Insertar Imagen" ? NoData : MiHistoria}/>
       <Title>{name}</Title>
       <HashTags>
@@ -79,6 +99,7 @@ function BlogComponent(props) {
         {date}
       </Date>
     </Box>
+    </Container>
   )
 }
 
