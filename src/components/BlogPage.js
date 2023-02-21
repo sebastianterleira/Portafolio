@@ -9,6 +9,7 @@ import BlogComponent from "./BlogComponent";
 import AnchorComponent from "../subComponents/Anchor";
 import BigTitle from "../subComponents/BigTitle";
 import { motion } from "framer-motion";
+import ParticleComponent from "../subComponents/ParticleComponent";
 
 const MainCointer = styled(motion.div)`
 background-image: url(${img});
@@ -76,6 +77,7 @@ function BlogPage() {
         <LogoComponent />
         <PowerButton />
         <SocialIcons />
+        <ParticleComponent theme={"light"}/>
         <AnchorComponent numbers={numbers}/>
         <Center>
           <Grid>

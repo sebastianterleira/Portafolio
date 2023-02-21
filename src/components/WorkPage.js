@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components" ;
 import { DarkTheme } from "./Themes";
 import { motion } from "framer-motion";
+import ParticleComponent from "../subComponents/ParticleComponent";
 
 import LogoComponent from "../subComponents/LogoComponent";
 import PowerButton from "../subComponents/PowerButton";
@@ -75,6 +76,7 @@ function WorkPage() {
   return (
     <ThemeProvider theme={DarkTheme}>
       <Box>
+        <ParticleComponent theme={"dark"}/>
         <LogoComponent theme={"dark"}/>
         <SocialIcons theme={"dark"}/>
         <PowerButton />
