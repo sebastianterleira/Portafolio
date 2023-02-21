@@ -39,8 +39,16 @@ function App() {
                 <MySkillsPage/>
               </Suspense>
               }/>
-              <Route path={"blog"} element={<BlogPage/>}/>
-              <Route path={"work"} element={<WorkPage/>}/>
+              <Route path={"blog"} element={
+              <Suspense fallback={<LazyLoading />}>
+                <BlogPage/>
+              </Suspense>
+              }/>
+              <Route path={"work"} element={
+              <Suspense fallback={<LazyLoading />}>
+                <WorkPage/>
+              </Suspense>
+              }/>
             </Routes>
           </AnimatePresence>
         </ThemeProvider>
