@@ -33,7 +33,7 @@ function SocialIcons(props) {
       <motion.div
       initial={{ transform: "scale(0)"}}
       animate={{ scale: [0,1,1.5,1]}}
-      transition={{type: "spring", duratio:1, delay:1}}
+      transition={{type: "spring", duration:1, delay:1}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://github.com/sebastianterleira"}>
           <Github width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
@@ -41,8 +41,8 @@ function SocialIcons(props) {
       </motion.div>
       <motion.div
       initial={{ transform: "scale(0)"}}
-      animate={{ scale: [0,1,1.5,1]}}
-      transition={{type: "spring", duratio:1, delay:1.2}}
+      animate={{ scale: [0,2,1.5,1]}}
+      transition={{type: "spring", duration:1, delay:1.2}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://twitter.com/SebastianTerlei"}>
           <Twitter width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
@@ -51,7 +51,7 @@ function SocialIcons(props) {
       <motion.div
       initial={{ transform: "scale(0)"}}
       animate={{ scale: [0,1,1.5,1]}}
-      transition={{type: "spring", duratio:1, delay:1.4}}
+      transition={{type: "spring", duration:1, delay:1.4}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://www.linkedin.com/in/sebastian-terleira-8773a4247/"}>
           <Linkedin width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
@@ -60,7 +60,7 @@ function SocialIcons(props) {
       <motion.div
       initial={{ transform: "scale(0)"}}
       animate={{ scale: [0,1,1.5,1]}}
-      transition={{type: "spring", duratio:1, delay:1.6}}
+      transition={{type: "spring", duration:1, delay:1.6}}
       >
         <NavLink style={{color:'inherit'}} target="_blank" to={"https://sebastianterdev.netlify.app/"}>
           <Blog width={25} height={25} fill={props.theme === "dark" ? DarkTheme.primary : DarkTheme.secondary } />
