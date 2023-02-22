@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Github } from "../components/AllSvgs";
@@ -53,6 +53,7 @@ font-size: calc(0.8em + 0.3vw);
 const Footer = styled.footer`
 display: flex;
 justify-content: space-between; 
+align-items: center;
 `
 
 const Link = styled(NavLink)`
@@ -100,6 +101,15 @@ function Card(props) {
 
   const {id, name, description, tags, demo, github} = props.data;
 
+
+  const Demo = (
+    <>
+    <Link to={`${demo}`} target="_blank">
+      Visit
+    </Link>
+    </>
+  )
+
   return (
     <Box key={id} variants={Item} >
       <Title>{name}</Title>
@@ -114,9 +124,7 @@ function Card(props) {
         }
       </Tags>
       <Footer>
-        <Link to={`${demo}`} target="_blank">
-          Visit
-        </Link>
+        { demo !== "" && Demo}
         <Git to={`${github}`} target="_blank">
           <Github width={30} height={30}/>
         </Git>

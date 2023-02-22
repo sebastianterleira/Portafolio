@@ -14,7 +14,7 @@ import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
-height: 400vh;
+height: 1125vh;
 position: relative;
 display: flex;
 align-items: center;
@@ -23,7 +23,7 @@ align-items: center;
 const Main = styled(motion.ul)`
 position: fixed;
 top: 12rem;
-left calc(10rem + 15vw);
+left: calc(10rem + 15vw);
 height: 40vh;
 display: flex;
 
