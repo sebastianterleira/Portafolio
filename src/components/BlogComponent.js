@@ -84,10 +84,10 @@ const Item = {
 
 function BlogComponent(props) {
   const {name, tags, date, imgSrc, link} = props.blog
-  
+
   return (
     <Container variants={Item}>
-      <Box to={`${link}`}>
+      <Box  to={link}>
       <Image img={imgSrc === "Insertar Imagen" ? NoData : MiHistoria}/>
       <Title>{name}</Title>
       <HashTags>

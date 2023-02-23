@@ -15,7 +15,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link: "Insertar Link"
+        link: "nolink"
     },
     {
         id:3,
@@ -23,7 +23,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link:"nolink"
     },
     {
         id:4,
@@ -31,7 +31,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link:"nolink"
     },
     {
         id:5,
@@ -39,7 +39,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link:"nolink"
     },
     {
         id:6,
@@ -47,7 +47,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link:"nolink"
 
     },
    
@@ -57,7 +57,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link:"nolink"
     },
     {
         id:8,
@@ -65,7 +65,7 @@ export const Blogs = [
         tags:[],
         date:"No Date",
         imgSrc:"Insertar Imagen",
-        link:"Insertar Link"
+        link:"nolink"
     },
   
 ] 

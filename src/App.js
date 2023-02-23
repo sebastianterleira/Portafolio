@@ -9,6 +9,7 @@ import { AnimatePresence } from "framer-motion";
 // Componentes
 import SoundBar from "./subComponents/SoundBar";
 const Main = lazy(() => import("./components/Main"));
+const NoBlogComponent = lazy(() => import("./components/NoBlogComponent"));
 const AboutPage = lazy(() => import("./components/AboutPage"));
 const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
 const BlogPage = lazy(() => import("./components/BlogPage"));
@@ -47,6 +48,11 @@ function App() {
               <Route path={"work"} element={
               <Suspense fallback={<LazyLoading />}>
                 <WorkPage/>
+              </Suspense>
+              }/>
+              <Route path={"blog/nolink"} element={
+              <Suspense fallback={<LazyLoading />}>
+                <NoBlogComponent/>
               </Suspense>
               }/>
             </Routes>
