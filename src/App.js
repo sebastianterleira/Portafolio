@@ -23,7 +23,7 @@ function App() {
       <Helmet>
         <meta property="og:image" content="https://i.postimg.cc/TPmn6y7N/home.png" />
         <meta property="og:title" content="SebastianTr. | FullStack Developer" />
-        <meta property="og:description" content="DESCRIPCIÓN_DE_LA_PÁGINA" />
+        <meta property="og:description" content="FullStack developer, apasionado por la tecnología y la programación." />
       </Helmet>
       <GlobalStyle />
         <ThemeProvider theme={LightTheme}>
