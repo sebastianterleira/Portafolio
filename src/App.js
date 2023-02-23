@@ -5,6 +5,7 @@ import { LightTheme, DarkTheme } from "./components/Themes";
 import GlobalStyle from "./globalStyles";
 import LazyLoading from "./components/LazyLoading";
 import { AnimatePresence } from "framer-motion";
+import { Helmet } from 'react-helmet';
 
 // Componentes
 import SoundBar from "./subComponents/SoundBar";
@@ -19,6 +20,11 @@ const WorkPage = lazy(() => import("./components/WorkPage"));
 function App() {
     return (
       <>
+      <Helmet>
+        <meta property="og:image" content="https://i.postimg.cc/TPmn6y7N/home.png" />
+        <meta property="og:title" content="SebastianTr. | FullStack Developer" />
+        <meta property="og:description" content="DESCRIPCIÓN_DE_LA_PÁGINA" />
+      </Helmet>
       <GlobalStyle />
         <ThemeProvider theme={LightTheme}>
           <SoundBar />
