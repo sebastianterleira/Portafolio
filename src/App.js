@@ -21,7 +21,7 @@ function App() {
     return (
       <>
       <Helmet>
-        <meta property="og:image" content="https://i.postimg.cc/TPmn6y7N/home.png" />
+        <meta property="og:image" content="https://i.postimg.cc/gJwHWDjb/portafolio.png" />
         <meta property="og:title" content="SebastianTr. | FullStack Developer" />
         <meta property="og:description" content="FullStack developer, apasionado por la tecnología y la programación." />
       </Helmet>
