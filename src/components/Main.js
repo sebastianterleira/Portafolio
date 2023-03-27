@@ -26,7 +26,7 @@ const Container = styled.div`
 padding: 2rem;
 `
 
-const Contact = styled(NavLink)`
+const Contact = styled.a`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
@@ -143,7 +143,7 @@ function Main() {
           <span>Click here</span>
         </Center>
 
-        <Contact target="_blank" to={{pathname:"mailto:seb.terleira1204@gmail.com"}}>
+        <Contact target="_blank" href="https://drive.google.com/file/d/1O8HvEvEfjh0OUlFSISvN6bXQMwSuETh_/view?usp=sharing">
           <motion.h3
           initial={{
             y:-200,
@@ -156,7 +156,7 @@ function Main() {
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
           >
-            Say hi..
+            Cv 📚
           </motion.h3>
         </Contact>
         <BLOG to={"/blog"}>
